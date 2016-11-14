@@ -16,7 +16,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pm-app',
-            template: "<div><h1>{{pageTitle}}</h1><div>My First Component</div></div>"
+            template: "<div><h1>{{pageTitle}}</h1><div><pm-products></pm-products></div></div>"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
