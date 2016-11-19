@@ -16,11 +16,12 @@ var ProductListComponent = (function () {
         this.imageMargin = 2;
         this.showImage = false;
         this.listFilter = 'cart';
+        //noinspection TypeScriptValidateTypes
         this.products = [
             {
                 "productId": 1,
                 "productName": "Leaf Rake",
-                "productCode": "GDN-0011",
+                'productCode': "GDN-0011",
                 "releaseDate": "March 19, 2016",
                 "description": "Leaf rake with 48-inch wooden handle.",
                 "price": 19.95,
