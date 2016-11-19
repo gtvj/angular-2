@@ -1,8 +1,10 @@
 import { Component } from "@angular/core";
 import { IProduct } from "./product";
+
 @Component({
     selector: 'pm-products',
-    templateUrl: 'app/products/product-list.component.html'
+    templateUrl: 'app/products/product-list.component.html',
+    styleUrls: ['app/products/product-list.component.css']
 })
 export class ProductListComponent {
     pageTitle: string = 'Product list';
@@ -10,7 +12,6 @@ export class ProductListComponent {
     imageMargin: number = 2;
     showImage: boolean = false;
     listFilter: string = 'cart';
-    //noinspection TypeScriptValidateTypes
     products: IProduct[] = [
         {
             "productId": 1,
