@@ -5,6 +5,6 @@ export interface IProduct {
     releaseDate: string;
     price: number;
     description: string;
-    starRating: string;
+    starRating: number;
     imageUrl: string;
 }
