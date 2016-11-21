@@ -5,7 +5,7 @@ import { IProduct } from "./product";
     selector: 'pm-products',
     moduleId: module.id,
     templateUrl: 'product-list.component.html',
-    styleUrls: ['product-list.component.css']
+    styleUrls: [ 'product-list.component.css' ]
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product list';
@@ -44,6 +44,7 @@ export class ProductListComponent implements OnInit {
             "starRating": 4.8,
             "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
         } ];
+
     toggleImage(): void {
         this.showImage = !this.showImage;
     }
