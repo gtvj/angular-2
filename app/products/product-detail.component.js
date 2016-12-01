@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var product_service_1 = require("./products/product.service");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.pageTitle = "Acme Product Management";
+var ProductDetailComponent = (function () {
+    function ProductDetailComponent() {
+        this.pageTitle = 'Product details';
     }
-    AppComponent = __decorate([
+    ProductDetailComponent = __decorate([
         core_1.Component({
-            selector: 'pm-app',
-            template: "<div>\n    <nav class=\"navbar navbar-default\">\n        <div class=\"container-fluid\">\n            <a class=\"navbar-brand\">{{ pageTitle }}</a>\n            <ul class=\"nav navbar-nav\">\n                <li><a [routerLink]=\"['/welcome']\">Home</a></li>\n                <li><a [routerLink]=\"['/products']\">Product List</a></li>\n            </ul>\n            <router-outlet></router-outlet>\n        </div>\n    </nav>\n</div>",
-            providers: [product_service_1.ProductService]
+            templateUrl: 'app/products/product-detail.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ProductDetailComponent);
+    return ProductDetailComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ProductDetailComponent = ProductDetailComponent;
+//# sourceMappingURL=product-detail.component.js.map
